@@ -3,7 +3,7 @@ import time
 
 rg.setmode(rg.BCM)
 
-ledPlusPin = 27
+ledPlusPin = 17
 
 rg.setup(ledPlusPin, rg.OUT)
 
