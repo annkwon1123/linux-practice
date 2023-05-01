@@ -1,0 +1,7 @@
+/tmp/kernel/fs/fcntl.c
+/tmp/kernel/include/linux/range.h
+/tmp/kernel/drivers/xen/xenfs/xenfs.h
+/tmp/kernel/tools/perf/builtin-stat.c
+/tmp/kernel/lib/raid6/algos.c
+/tmp/kernel/mm/slab.c
+
