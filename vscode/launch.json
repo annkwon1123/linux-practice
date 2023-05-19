@@ -1,0 +1,221 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "copy",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/fileio/copy",
+        "args": [
+            "${workspaceFolder}/fileio/copy",
+            "${workspaceFolder}/copy_new"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "t_fork",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/procexec/t_fork",
+        "args": [
+            "10",
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "fork_whos_on_first",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/procexec/fork_whos_on_first",
+        "args": [
+            "10",
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "make_zombie",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/procexec/make_zombie",
+        "args": [
+            "abc",
+            "def"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "multi_SIGCHLD",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/procexec/multi_SIGCHLD",
+        "args": [
+            "1",
+            "2",
+            "4"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "real_timer",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/timers/real_timer",
+        "args": [
+            "1",
+            "800000",
+            "1",
+            "0"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "ptmr_sigev_signal",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/timers/ptmr_sigev_signal",
+        "args": [
+            "2:5"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "simple_thread",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/threads/simple_thread",
+        "args": [
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "detached_attrib",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/threads/detached_attrib",
+        "args": [
+            "2:5"
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+      {
+        "name": "simple_pipe",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/pipes/simple_pipe",
+        "args": [
+            "input value",
+        ],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      }
+    ]
+}
