@@ -1,0 +1,36 @@
+##
+## Makefile : for Static/Shared(Dynamic) Library Programming  : funfun.yoo@gmail.com
+##
+
+PLATFORM = 
+
+CC = $(PLATFORM)gcc
+CFLAGS = -Wall 
+
+MAIN_SRC = main
+LIB_SRC1 = lib_func_1
+LIB_SRC2 = lib_func_2
+
+LIB_OUT = libmyfunc.a
+
+all : $(MAIN_SRC)
+
+$(MAIN_SRC) : $(MAIN_SRC).o $(LIB_OUT)
+	$(CC) -o $@ $(MAIN_SRC).o -L. -lmyfunc
+
+$(LIB_OUT) : $(LIB_SRC1).o $(LIB_SRC2).o
+	ar ruv $@ $(LIB_SRC1).o $(LIB_SRC2).o
+
+$(MAIN_SRC).o : $(MAIN_SRC).c
+	$(CC) -c $(MAIN_SRC).c -o $(MAIN_SRC).o
+
+$(LIB_SRC1).o : $(LIB_SRC1).c
+	$(CC) -c $? -o $(LIB_SRC1).o 
+## $? : Last Updated Source
+
+$(LIB_SRC2).o : $(LIB_SRC2).c
+	$(CC) -c $? -o $(LIB_SRC2).o
+
+clean :
+	rm -f *.o *.a $(MAIN_SRC) $(LIB_OUT)
+
